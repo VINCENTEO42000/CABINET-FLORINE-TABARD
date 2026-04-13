@@ -8,13 +8,16 @@
 
 
 /*-------------------------------------------------------------------------------------------*/
-/* mes polices */
+/* mes polices : pour le body, la police inter a été demandée */
 
 body {
 
-    font-family: "Poppins", sans-serif;
 
-    font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
 
 }
 
@@ -33,24 +36,6 @@ body {
 
 }
 
-*-------------------------------------------------------------------------------------------*/
-/* TEST DE VISUALISATION POUR LES NULS!!!*/
-
-.bgred {
-    background-color: red;
-}
-
-.bgblue {
-    background-color: blue;
-}
-
-.bggreen {
-    background-color: green;
-}
-
-.bgyellow {
-    background-color: yellow;
-}
 
 /*-------------------------------------------------------------------------------------------*/
 
@@ -105,23 +90,30 @@ h1 {
 }
 
 /*-------------------------------------------------------------------------------------------*/
-/* autre fonction */
+/* Pour les titres la police Playfair Display avec sherif a été demandée */
 
-.text-center {
-    text-align: center;
+h1, h2{
+    
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 .txt-white {
     color: white;
 }
 
-.txt-blue {
-    color: #2897B8;
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* autre fonction */
+
+.text-center {
+    text-align: center;
 }
 
-.txt-red {
-    color: red;
-}
+
 
 /*-------------------------------------------------------------------------------------------*/
 /* les classes de largeur */
@@ -186,7 +178,7 @@ h1 {
 }
 
 .w-45 {
-    width: 48%;
+    width: 45%;
 }
 
 .w-48 {
@@ -392,7 +384,7 @@ h1 {
 
 .btn2 {
     background-color: white;
-    color:#2897B8;
+    color: #2897B8;
     padding: 10px 10px;
     display: inline-block;
     border-radius: 25px;
@@ -404,11 +396,11 @@ h1 {
 /* section hero*/
 
 .section-hero {
-    background-image: url(assets/HERO.jpg);
+    background-color: #2897B8;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vH;
+    min-height: 100dvh;
     margin-top: 80px;
     color: white;
 
@@ -431,38 +423,20 @@ h1 {
 /* MAIN*/
 
 .section-blue {
-    background-color: #2897B8 ;
+    background-color: #2897B8;
 }
 
-.padding-section {
 
-    padding: 50px;
-}
 
 
 
 /*-------------------------------------------------------------------------------------------*/
 /* SECTION GOOGLE */
 
-.card-utilisateur {
 
-    background-color: #2897B8;
-    border-radius: 10px;
-    padding: 15px;
-}
 
-.card-utilisateur2 {
 
-    background-color: red;
-    border-radius: 10px;
-    padding: 15px;
-}
 
-.utilisateur {
-    border-radius: 50%;
-    height: 80px;
-    width: 80px;
-}
 
 /*-------------------------------------------------------------------------------------------*/
 /* section footer */
@@ -472,9 +446,7 @@ h1 {
     color: white;
 }
 
-.borderCARD {
-    border-radius: 10px;
-}
+
 
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
@@ -753,14 +725,28 @@ h1 {
     /* pour le changement des images de mon main EN ECRAN 900*/
 
 
-    .medium900 {
-        width: 100%;
+
+
+    .medium900w-60 {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
 
     }
 
-    .medium900w-100 {
+        .medium900w-100 {
         width: 100%;
+        display: block;
+        margin: 0 auto;
 
+    }
+
+
+    .container-medium900w-60 {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .medium900-MB-20 {
@@ -773,13 +759,13 @@ h1 {
     }
 
     .position-titre-900 {
-    transform: translate(0, 180px);
-    
-}
+        transform: translate(0, 180px);
 
-.h1-900 {
-    font-size: 30px;
-    font-weight: 500;
-}
+    }
+
+    .h1-900 {
+        font-size: 30px;
+        font-weight: 500;
+    }
 
 }
